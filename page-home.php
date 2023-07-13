@@ -70,7 +70,7 @@
         <h2>Mais de </br>3 Mil games</h2>
         <div class="container">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/games.png" alt="Games">
-            <div class="btn-games">
+            <div class="btn-games box-s">
                 <a href=""><span>I WANT TO</span> become <strong>AN AFFILIATE</strong></a>
             </div>
         </div>
@@ -111,7 +111,9 @@
         </div>
     </section>
     <section class="social">
+        
         <div class="container">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bola.png" alt="" class="bola-bg">
             <div class="content-social">
                 <div class="col-img">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/instagram.png" alt="Instagram Esporte da Sorte">
@@ -148,8 +150,10 @@
     </section>
     <section class="afiliados">
         <div class="content-afiliados">
-            <h2><span>Quero</span> ser <strong></br>Afiliado</strong></h2>
-            <a href="">I want to become an affiliate</a>
+            <div class="col-info">
+                <h2><span>Quero</span> ser <strong></br>Afiliado</strong></h2>
+                <a href="">Quero me tornar um afilado</a>
+            </div>
         </div>
     </section>
 </main> 
