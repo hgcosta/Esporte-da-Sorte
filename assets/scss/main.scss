@@ -1,6 +1,33 @@
 @import "responsivo";
 @import "mixins";
 @import "home";
+@import "header";
+@import "footer";
 html {
   scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: principal-regular;
+  src: url(../css/fonts/MonumentExtended-Regular.ttf);
+}
+
+@font-face {
+  font-family: principal-bold;
+  src: url(../css/fonts/MonumentExtended-Ultrabold.ttf);
+}
+
+@font-face {
+  font-family: principal-l;
+  src: url(../css/fonts/MonumentExtended-Light.ttf);
+}
+
+@font-face {
+  font-family: secundaria-l;
+  src: url(../css/fonts/Nexa-Light.otf);
+}
+
+@font-face {
+  font-family: secundaria-bold;
+  src: url(../css/fonts/Nexa-Heavy.otf);
 }
