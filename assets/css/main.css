@@ -299,6 +299,8 @@
   text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.5);
   margin-bottom: 1.5rem;
   margin: 0 auto;
+  position: relative;
+  z-index: 3;
 }
 
 @media only screen and (max-width: 900px) {
@@ -1099,7 +1101,8 @@
 }
 
 .afiliados .content-afiliados .col-info h2 {
-  font-family: principal-bold;
+  font-family: principal-l;
+  font-family: principal-l;
   text-transform: uppercase;
   color: #fff;
   font-size: 3.2rem;
@@ -1110,20 +1113,36 @@
 
 .afiliados .content-afiliados .col-info h2 strong {
   color: #38e67d;
+  font-family: principal-bold;
+}
+
+.afiliados .content-afiliados .col-info h2 span {
+  font-family: principal-bold;
 }
 
 .afiliados .content-afiliados .col-info a {
   background-color: #38e67d;
-  font-size: 1.85rem;
   color: #001a4f;
-  font-family: secundaria-l;
   text-decoration: none;
   padding: 0.5rem 1.2rem;
   border-radius: 18px;
-  width: 290px;
+  width: 340px;
   display: block;
   line-height: 27px;
-  font-family: secundaria-bold;
+  font-family: principal-l;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  transition: all ease-in-out 0.5s;
+}
+
+.afiliados .content-afiliados .col-info a strong {
+  font-family: principal-bold;
+}
+
+.afiliados .content-afiliados .col-info a:hover {
+  width: 370px;
+  border-radius: 15px;
 }
 
 header {
@@ -1139,6 +1158,7 @@ header {
 .content-header {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 1rem 15px 2rem 15px;
 }
 

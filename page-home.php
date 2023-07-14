@@ -151,8 +151,8 @@
     <section class="afiliados" id="seja-afiliados">
         <div class="content-afiliados">
             <div class="col-info">
-                <h2><span>Quero</span> ser <strong>Afiliado</strong></h2>
-                <a href="">Quero me tornar um afilado</a>
+                <h2><span>Quero</span></br> ser <strong>Afiliado</strong></h2>
+                <a href="">Eu <strong>Quero</strong></br> ser <strong>Afiliado</strong></a>
             </div>
         </div>
     </section>

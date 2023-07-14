@@ -245,6 +245,8 @@
     text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.5);
     margin-bottom: 1.5rem;
     margin: 0 auto;
+    position: relative;
+    z-index: 3;
     @include tablet {
       font-size: 2rem;
     }
@@ -901,7 +903,8 @@
       background-size: cover;
       height: 328px;
       h2 {
-        font-family: principal-bold;
+        font-family: principal-l;
+        font-family: principal-l;
         text-transform: uppercase;
         color: #fff;
         font-size: 3.2rem;
@@ -910,20 +913,33 @@
         text-align: center;
         strong {
           color: #38e67d;
+          font-family: principal-bold;
+        }
+        span {
+          font-family: principal-bold;
         }
       }
       a {
         background-color: #38e67d;
-        font-size: 1.85rem;
         color: #001a4f;
-        font-family: secundaria-l;
         text-decoration: none;
         padding: 0.5rem 1.2rem;
         border-radius: 18px;
-        width: 290px;
+        width: 340px;
         display: block;
         line-height: 27px;
-        font-family: secundaria-bold;
+        font-family: principal-l;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+        transition: all ease-in-out 0.5s;
+        strong {
+          font-family: principal-bold;
+        }
+        &:hover {
+          width: 370px;
+          border-radius: 15px;
+        }
       }
     }
   }
