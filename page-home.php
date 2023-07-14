@@ -71,7 +71,7 @@
         <div class="container">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/games.png" alt="Games">
             <div class="btn-games box-s">
-                <a href=""><span>I WANT TO</span> become <strong>AN AFFILIATE</strong></a>
+                <a href=""><span>Quero</span> ser <strong>Afiliado</strong></a>
             </div>
         </div>
     </section>

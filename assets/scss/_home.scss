@@ -104,12 +104,12 @@
         border-radius: 30px;
         font-size: 1rem;
         text-transform: uppercase;
-        font-family: secundaria-l;
-        font-weight: bold;
+        font-family: principal-l;
         text-decoration: none;
         z-index: 2;
         position: relative;
         transition: all ease-in-out 0.5s;
+        letter-spacing: 2px;
         @include tablet {
           width: 80%;
         }
@@ -123,11 +123,11 @@
           }
         }
         span {
-          font-family: secundaria-bold;
+          font-family: principal-bold;
         }
         strong {
           color: #38e67d;
-          font-family: secundaria-bold;
+          font-family: principal-bold;
           transition: all ease-in-out 0.5s;
         }
       }
@@ -184,13 +184,13 @@
     justify-content: center;
   }
   .box-s {
-    width: 200px;
+    // width: 200px;
     position: relative;
     &::after {
       content: "";
       display: block;
-      width: 380px;
-      height: 210px;
+      width: 520px;
+      height: 168px;
       background-image: url("../icons/sombra-botao-02.png");
       background-repeat: no-repeat;
       background-size: 100%;
@@ -204,30 +204,30 @@
   a {
     color: #fff;
     display: block;
-    width: 230px;
+    width: 310px;
     text-align: center;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1rem;
     background-color: #023596;
     border: solid 3px #38e67d;
     border-radius: 30px;
     font-size: 1rem;
     text-transform: uppercase;
-    font-family: secundaria-l;
-    font-weight: bold;
+    font-family: principal-l;
     text-decoration: none;
     z-index: 2;
     position: relative;
+    letter-spacing: 2px;
     transition: all ease-in-out 0.5s;
     &:hover {
-      width: 250px;
+      width: 340px;
       border-radius: 15px;
     }
     span {
-      font-family: secundaria-bold;
+      font-family: principal-bold;
     }
     strong {
       color: #38e67d;
-      font-family: secundaria-bold;
+      font-family: principal-bold;
       transition: all ease-in-out 0.5s;
     }
   }
@@ -260,7 +260,7 @@
     &::after {
       content: "";
       display: block;
-      width: 395px;
+      width: 495px;
       height: 73px;
       background-image: url("../img/shadow-games.png");
       background-repeat: no-repeat;
@@ -279,31 +279,35 @@
     a {
       color: #fff;
       display: block;
-      width: 250px;
+      width: 320px;
       text-align: center;
-      padding: 0.4rem 1.5rem;
+      padding: 0.6rem 1.5rem;
       background-color: #043883;
       border: solid 4px #001b56;
       border-radius: 19px;
       font-size: 1rem;
       text-transform: uppercase;
-      font-family: secundaria-l;
-      font-weight: bold;
+      font-family: principal-l;
+      letter-spacing: 2px;
       text-decoration: none;
       z-index: 2;
       position: absolute;
       transition: all ease-in-out 0.5s;
       line-height: 14px;
       top: -29px;
-      z-index: 999;
-      left: 430px;
+      z-index: 9999;
+      left: 370px;
       line-height: 17px;
+      &:hover {
+        width: 340px;
+        border-radius: 15px;
+      }
       span {
-        font-family: secundaria-bold;
+        font-family: principal-bold;
       }
       strong {
         color: #38e67d;
-        font-family: secundaria-bold;
+        font-family: principal-bold;
         transition: all ease-in-out 0.5s;
       }
     }
@@ -419,8 +423,8 @@
           border-radius: 30px;
           font-size: 1rem;
           text-transform: uppercase;
-          font-family: secundaria-l;
-          font-weight: bold;
+          font-family: principal-l;
+          letter-spacing: 2px;
           text-decoration: none;
           z-index: 2;
           position: relative;
@@ -430,11 +434,11 @@
             border-radius: 15px;
           }
           span {
-            font-family: secundaria-bold;
+            font-family: principal-bold;
           }
           strong {
             color: #38e67d;
-            font-family: secundaria-bold;
+            font-family: principal-bold;
             transition: all ease-in-out 0.5s;
           }
         }
@@ -509,8 +513,8 @@
           border-radius: 30px;
           font-size: 1rem;
           text-transform: uppercase;
-          font-family: secundaria-l;
-          font-weight: bold;
+          font-family: principal-l;
+          letter-spacing: 2px;
           text-decoration: none;
           z-index: 2;
           position: relative;
@@ -520,11 +524,11 @@
             border-radius: 15px;
           }
           span {
-            font-family: secundaria-bold;
+            font-family: principal-bold;
           }
           strong {
             color: #38e67d;
-            font-family: secundaria-bold;
+            font-family: principal-bold;
             transition: all ease-in-out 0.5s;
           }
         }
@@ -682,8 +686,9 @@
           border-radius: 30px;
           font-size: 1rem;
           text-transform: uppercase;
-          font-family: secundaria-l;
-          font-weight: bold;
+          font-family: principal-l;
+          letter-spacing: 2px;
+
           text-decoration: none;
           z-index: 2;
           position: relative;
@@ -698,11 +703,11 @@
             font-size: 0.95rem;
           }
           span {
-            font-family: secundaria-bold;
+            font-family: principal-bold;
           }
           strong {
             color: #38e67d;
-            font-family: secundaria-bold;
+            font-family: principal-bold;
             transition: all ease-in-out 0.5s;
           }
         }
@@ -821,8 +826,8 @@
           border-radius: 30px;
           font-size: 1rem;
           text-transform: uppercase;
-          font-family: secundaria-l;
-          font-weight: bold;
+          font-family: principal-l;
+          letter-spacing: 2px;
           text-decoration: none;
           z-index: 2;
           position: relative;
@@ -846,11 +851,11 @@
             transform: rotate(360deg);
           }
           span {
-            font-family: secundaria-bold;
+            font-family: principal-bold;
           }
           strong {
             color: #38e67d;
-            font-family: secundaria-bold;
+            font-family: principal-bold;
             transition: all ease-in-out 0.5s;
           }
         }
@@ -883,7 +888,7 @@
     padding: 1rem 0 2rem 0;
     margin: 0 auto;
     .col-info {
-      max-width: 400px;
+      max-width: 470px;
       margin: 0 auto;
       text-align: center;
       display: flex;
@@ -891,12 +896,15 @@
       align-items: center;
       background-image: url("../img/quadrado.png");
       padding: 2rem;
-
+      background-position-x: 0px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 328px;
       h2 {
         font-family: principal-bold;
         text-transform: uppercase;
         color: #fff;
-        font-size: 3rem;
+        font-size: 3.2rem;
         margin-bottom: 1.3rem;
         letter-spacing: 2px;
         text-align: center;
@@ -906,11 +914,11 @@
       }
       a {
         background-color: #38e67d;
-        font-size: 1.5rem;
+        font-size: 1.85rem;
         color: #001a4f;
         font-family: secundaria-l;
         text-decoration: none;
-        padding: 0.3rem 1rem;
+        padding: 0.5rem 1.2rem;
         border-radius: 18px;
         width: 290px;
         display: block;
