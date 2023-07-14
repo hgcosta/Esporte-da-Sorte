@@ -16,10 +16,24 @@
   padding: 2rem 15px 0 15px;
 }
 
+@media only screen and (max-width: 900px) {
+  .hero .content-hero {
+    flex-direction: column;
+  }
+}
+
 .hero .content-hero .col-info {
   width: 50%;
   padding-left: 1.5rem;
   position: relative;
+}
+
+@media only screen and (max-width: 900px) {
+  .hero .content-hero .col-info {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
 }
 
 .hero .content-hero .col-info h1 {
@@ -27,8 +41,18 @@
   text-transform: uppercase;
   color: #fff;
   font-size: 2.2rem;
-  max-width: 410px;
+  max-width: 420px;
   margin-bottom: 1rem;
+  letter-spacing: 3px;
+}
+
+@media only screen and (max-width: 900px) {
+  .hero .content-hero .col-info h1 {
+    font-size: 2rem;
+    max-width: inherit;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
 }
 
 .hero .content-hero .col-info h1 strong {
@@ -41,8 +65,15 @@
   max-width: 310px;
 }
 
+@media only screen and (max-width: 900px) {
+  .hero .content-hero .col-info p {
+    max-width: inherit;
+    text-align: center;
+  }
+}
+
 .hero .content-hero .col-info p strong {
-  font-weight: bold;
+  font-family: secundaria-bold;
 }
 
 .hero .content-hero .col-info img {
@@ -51,24 +82,46 @@
   margin-bottom: 1.2rem;
 }
 
+@media only screen and (max-width: 900px) {
+  .hero .content-hero .col-info img {
+    margin-left: 0;
+    width: 80%;
+  }
+}
+
 .hero .content-hero .col-info .box-s {
   margin-left: 1.5rem;
   width: 400px;
   position: relative;
 }
 
+@media only screen and (max-width: 900px) {
+  .hero .content-hero .col-info .box-s {
+    width: 100%;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .hero .content-hero .col-info .box-s::after {
   content: "";
   display: block;
-  width: 570px;
+  width: 550px;
   height: 290px;
   background-image: url("../icons/sombra-botao.png");
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
   top: 10px;
-  left: 0px;
+  left: 10px;
   z-index: 1;
+}
+
+@media only screen and (max-width: 900px) {
+  .hero .content-hero .col-info .box-s::after {
+    display: none;
+  }
 }
 
 .hero .content-hero .col-info a {
@@ -90,9 +143,19 @@
   transition: all ease-in-out 0.5s;
 }
 
+@media only screen and (max-width: 900px) {
+  .hero .content-hero .col-info a {
+    width: 80%;
+  }
+}
+
 .hero .content-hero .col-info a:hover {
-  border: solid 3px #023596;
   border-radius: 15px;
+  width: 415px;
+}
+
+.hero .content-hero .col-info a:hover .box-s::after {
+  width: 600px;
 }
 
 .hero .content-hero .col-info a span {
@@ -109,8 +172,24 @@
   width: 50%;
 }
 
+@media only screen and (max-width: 900px) {
+  .hero .content-hero .col-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .hero .content-hero .col-img img {
   width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  .hero .content-hero .col-img img {
+    width: 85%;
+    margin-top: 2rem;
+  }
 }
 
 .benefits {
@@ -131,6 +210,12 @@
   margin-bottom: 1.5rem;
 }
 
+@media only screen and (max-width: 900px) {
+  .benefits h2 {
+    font-size: 2rem;
+  }
+}
+
 .benefits .owl-carousel {
   margin-bottom: 2rem;
 }
@@ -147,7 +232,6 @@
 }
 
 .benefits .box-s {
-  margin-left: 1.5rem;
   width: 200px;
   position: relative;
 }
@@ -155,7 +239,7 @@
 .benefits .box-s::after {
   content: "";
   display: block;
-  width: 340px;
+  width: 380px;
   height: 210px;
   background-image: url("../icons/sombra-botao-02.png");
   background-repeat: no-repeat;
@@ -170,13 +254,13 @@
 .benefits a {
   color: #fff;
   display: block;
-  width: 200px;
+  width: 230px;
   text-align: center;
-  padding: 0.4rem 1rem;
-  background-color: #064095;
+  padding: 0.5rem 1rem;
+  background-color: #023596;
   border: solid 3px #38e67d;
   border-radius: 30px;
-  font-size: 0.75rem;
+  font-size: 1rem;
   text-transform: uppercase;
   font-family: secundaria-l;
   font-weight: bold;
@@ -184,7 +268,11 @@
   z-index: 2;
   position: relative;
   transition: all ease-in-out 0.5s;
-  line-height: 14px;
+}
+
+.benefits a:hover {
+  width: 250px;
+  border-radius: 15px;
 }
 
 .benefits a span {
@@ -212,6 +300,12 @@
   text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.5);
   margin-bottom: 1.5rem;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 900px) {
+  .games h2 {
+    font-size: 2rem;
+  }
 }
 
 .games img {
@@ -283,6 +377,12 @@
   background-color: #022d87;
   width: 100%;
   padding-bottom: 2.5rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .competicoes {
+    display: none;
+  }
 }
 
 .competicoes .content-competicoes {
@@ -362,7 +462,7 @@
 }
 
 .competicoes .content-competicoes .col-info p strong {
-  font-weight: bold;
+  font-family: secundaria-bold;
 }
 
 .competicoes .content-competicoes .col-info .btn-affiliate {
@@ -381,7 +481,7 @@
 .competicoes .content-competicoes .col-info .btn-affiliate .box-s::after {
   content: "";
   display: block;
-  width: 435px;
+  width: 455px;
   height: 129px;
   background-image: url("../img/shadow-taca.png");
   background-repeat: no-repeat;
@@ -395,12 +495,12 @@
 .competicoes .content-competicoes .col-info .btn-affiliate a {
   color: #fff;
   display: block;
-  width: 280px;
+  width: 300px;
   text-align: center;
-  padding: 0.4rem 1rem;
-  background-color: #064095;
-  border: solid 4px #38e67d;
-  border-radius: 17px;
+  padding: 0.5rem 1rem;
+  background-color: #023596;
+  border: solid 3px #38e67d;
+  border-radius: 30px;
   font-size: 1rem;
   text-transform: uppercase;
   font-family: secundaria-l;
@@ -409,10 +509,14 @@
   z-index: 2;
   position: relative;
   transition: all ease-in-out 0.5s;
-  line-height: 14px;
 }
 
-.competicoes .content-competicoes .col-info .btn-affiliate a cach span {
+.competicoes .content-competicoes .col-info .btn-affiliate a:hover {
+  width: 320px;
+  border-radius: 15px;
+}
+
+.competicoes .content-competicoes .col-info .btn-affiliate a span {
   font-family: secundaria-bold;
 }
 
@@ -425,6 +529,12 @@
 .eventos {
   background-color: #022d87;
   width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  .eventos {
+    display: none;
+  }
 }
 
 .eventos .content-event {
@@ -459,7 +569,7 @@
 }
 
 .eventos .content-event .col-info p strong {
-  font-weight: bold;
+  font-family: secundaria-bold;
 }
 
 .eventos .content-event .col-info .btn-affiliate {
@@ -478,7 +588,7 @@
 .eventos .content-event .col-info .btn-affiliate .box-s::after {
   content: "";
   display: block;
-  width: 415px;
+  width: 460px;
   height: 198px;
   background-image: url("../img/shadow-evento.png");
   background-repeat: no-repeat;
@@ -492,12 +602,12 @@
 .eventos .content-event .col-info .btn-affiliate a {
   color: #fff;
   display: block;
-  width: 280px;
+  width: 300px;
   text-align: center;
-  padding: 0.4rem 1rem;
-  background-color: #064095;
-  border: solid 2px #38e67d;
-  border-radius: 17px;
+  padding: 0.5rem 1rem;
+  background-color: #023596;
+  border: solid 3px #38e67d;
+  border-radius: 30px;
   font-size: 1rem;
   text-transform: uppercase;
   font-family: secundaria-l;
@@ -506,10 +616,14 @@
   z-index: 2;
   position: relative;
   transition: all ease-in-out 0.5s;
-  line-height: 14px;
 }
 
-.eventos .content-event .col-info .btn-affiliate a cach span {
+.eventos .content-event .col-info .btn-affiliate a:hover {
+  width: 320px;
+  border-radius: 15px;
+}
+
+.eventos .content-event .col-info .btn-affiliate a span {
   font-family: secundaria-bold;
 }
 
@@ -553,11 +667,23 @@
   position: relative;
 }
 
+@media only screen and (max-width: 900px) {
+  .social .container {
+    padding: 0 5px;
+  }
+}
+
 .social .bola-bg {
   position: absolute;
   top: -160px;
   left: -100px;
   width: 700px;
+}
+
+@media only screen and (max-width: 900px) {
+  .social .bola-bg {
+    display: none;
+  }
 }
 
 .social .content-social {
@@ -573,19 +699,44 @@
   position: relative;
 }
 
+@media only screen and (max-width: 900px) {
+  .social .content-social {
+    padding: 2rem 0.5rem 0 0.5rem;
+  }
+}
+
 .social .content-social .col-img {
   width: 40%;
   display: flex;
   justify-content: flex-end;
 }
 
+@media only screen and (max-width: 900px) {
+  .social .content-social .col-img {
+    align-items: flex-end;
+  }
+}
+
 .social .content-social .col-img img {
   width: 300px;
+}
+
+@media only screen and (max-width: 900px) {
+  .social .content-social .col-img img {
+    width: 100%;
+    height: 280px;
+  }
 }
 
 .social .content-social .col-info {
   width: 60%;
   padding: 2rem 4rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .social .content-social .col-info {
+    padding: 1rem 0.5rem;
+  }
 }
 
 .social .content-social .col-info h3 {
@@ -595,6 +746,13 @@
   font-size: 1.9rem;
   margin-bottom: 1.3rem;
   letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 900px) {
+  .social .content-social .col-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .social .content-social .col-info h3 strong {
@@ -608,8 +766,15 @@
   font-size: 1.1rem;
 }
 
+@media only screen and (max-width: 900px) {
+  .social .content-social .col-info p {
+    max-width: inherit;
+    font-size: 0.95rem;
+  }
+}
+
 .social .content-social .col-info p strong {
-  font-weight: bold;
+  font-family: secundaria-bold;
 }
 
 .social .content-social .col-info .btn-affiliate {
@@ -619,16 +784,29 @@
   margin-top: 3rem;
 }
 
+@media only screen and (max-width: 900px) {
+  .social .content-social .col-info .btn-affiliate {
+    margin-top: 1.3rem;
+  }
+}
+
 .social .content-social .col-info .btn-affiliate .box-s {
   margin-left: 1.5rem;
   width: 400px;
   position: relative;
 }
 
+@media only screen and (max-width: 900px) {
+  .social .content-social .col-info .btn-affiliate .box-s {
+    margin-left: 0.5rem;
+    width: 100%;
+  }
+}
+
 .social .content-social .col-info .btn-affiliate .box-s::after {
   content: "";
   display: block;
-  width: 415px;
+  width: 440px;
   height: 168px;
   background-image: url("../img/sombra-coroa.png");
   background-repeat: no-repeat;
@@ -639,15 +817,24 @@
   z-index: 1;
 }
 
+@media only screen and (max-width: 900px) {
+  .social .content-social .col-info .btn-affiliate .box-s::after {
+    top: 9px;
+    left: 1px;
+    width: 280px;
+    height: 58px;
+  }
+}
+
 .social .content-social .col-info .btn-affiliate a {
   color: #fff;
   display: block;
-  width: 280px;
+  width: 300px;
   text-align: center;
-  padding: 0.4rem 1rem;
-  background-color: #064095;
-  border: solid 4px #38e67d;
-  border-radius: 17px;
+  padding: 0.5rem 1rem;
+  background-color: #023596;
+  border: solid 3px #38e67d;
+  border-radius: 30px;
   font-size: 1rem;
   text-transform: uppercase;
   font-family: secundaria-l;
@@ -656,10 +843,21 @@
   z-index: 2;
   position: relative;
   transition: all ease-in-out 0.5s;
-  line-height: 14px;
 }
 
-.social .content-social .col-info .btn-affiliate a cach span {
+.social .content-social .col-info .btn-affiliate a:hover {
+  border-radius: 15px;
+  width: 320px;
+}
+
+@media only screen and (max-width: 900px) {
+  .social .content-social .col-info .btn-affiliate a {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+}
+
+.social .content-social .col-info .btn-affiliate a span {
   font-family: secundaria-bold;
 }
 
@@ -682,8 +880,21 @@
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 900px) {
+  .tv .content-tv {
+    padding-top: 2rem;
+    flex-direction: column-reverse;
+  }
+}
+
 .tv .content-tv .col-info {
   width: 50%;
+}
+
+@media only screen and (max-width: 900px) {
+  .tv .content-tv .col-info {
+    width: 100%;
+  }
 }
 
 .tv .content-tv .col-info h3 {
@@ -694,6 +905,14 @@
   margin-bottom: 1.3rem;
   letter-spacing: 2px;
   position: relative;
+}
+
+@media only screen and (max-width: 900px) {
+  .tv .content-tv .col-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
 }
 
 .tv .content-tv .col-info h3::before {
@@ -722,8 +941,15 @@
   font-size: 1.1rem;
 }
 
+@media only screen and (max-width: 900px) {
+  .tv .content-tv .col-info p {
+    text-align: center;
+    font-size: 0.95rem;
+  }
+}
+
 .tv .content-tv .col-info p strong {
-  font-weight: bold;
+  font-family: secundaria-bold;
 }
 
 .tv .content-tv .col-info .btn-affiliate {
@@ -733,10 +959,25 @@
   margin-top: 3rem;
 }
 
+@media only screen and (max-width: 900px) {
+  .tv .content-tv .col-info .btn-affiliate {
+    margin-top: 1rem;
+  }
+}
+
 .tv .content-tv .col-info .btn-affiliate .box-s {
   margin-left: 1.5rem;
   width: 400px;
   position: relative;
+}
+
+@media only screen and (max-width: 900px) {
+  .tv .content-tv .col-info .btn-affiliate .box-s {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 .tv .content-tv .col-info .btn-affiliate .box-s::after {
@@ -753,15 +994,24 @@
   z-index: 1;
 }
 
+@media only screen and (max-width: 900px) {
+  .tv .content-tv .col-info .btn-affiliate .box-s::after {
+    width: 390px;
+    height: 74px;
+    top: 9px;
+    left: 50px;
+  }
+}
+
 .tv .content-tv .col-info .btn-affiliate a {
   color: #fff;
   display: block;
-  width: 280px;
+  width: 300px;
   text-align: center;
-  padding: 0.4rem 1rem;
-  background-color: #064095;
-  border: solid 4px #38e67d;
-  border-radius: 17px;
+  padding: 0.5rem 1rem;
+  background-color: #023596;
+  border: solid 3px #38e67d;
+  border-radius: 30px;
   font-size: 1rem;
   text-transform: uppercase;
   font-family: secundaria-l;
@@ -770,7 +1020,11 @@
   z-index: 2;
   position: relative;
   transition: all ease-in-out 0.5s;
-  line-height: 14px;
+}
+
+.tv .content-tv .col-info .btn-affiliate a:hover {
+  width: 320px;
+  border-radius: 15px;
 }
 
 .tv .content-tv .col-info .btn-affiliate a::after {
@@ -802,6 +1056,12 @@
   width: 50%;
 }
 
+@media only screen and (max-width: 900px) {
+  .tv .content-tv .col-img {
+    width: 100%;
+  }
+}
+
 .tv .content-tv .col-img img {
   width: 100%;
 }
@@ -814,7 +1074,7 @@
 .afiliados .content-afiliados {
   display: flex;
   max-width: 1000px;
-  background-color: #001a4f;
+  background: linear-gradient(85deg, #001a4f -83%, #001a4f 85%, rgba(0, 26, 79, 0.14888) 100%);
   padding: 1rem 0 2rem 0;
   margin: 0 auto;
 }
@@ -826,6 +1086,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url("../img/quadrado.png");
+  padding: 2rem;
 }
 
 .afiliados .content-afiliados .col-info h2 {
@@ -853,10 +1115,17 @@
   width: 290px;
   display: block;
   line-height: 27px;
+  font-family: secundaria-bold;
 }
 
 header {
   background: linear-gradient(180deg, rgba(3, 37, 104, 0.66) -83%, rgba(3, 37, 104, 0.56) 75%, rgba(9, 11, 17, 0) 100%);
+}
+
+@media only screen and (max-width: 900px) {
+  header {
+    display: none;
+  }
 }
 
 .content-header {
@@ -946,5 +1215,5 @@ html {
 
 @font-face {
   font-family: secundaria-bold;
-  src: url(../css/fonts/Nexa-Heavy.otf);
+  src: url(../css/fonts/Nexa-Bold.otf);
 }

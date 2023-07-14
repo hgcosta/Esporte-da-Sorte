@@ -5,6 +5,9 @@ header {
     rgba(3, 37, 104, 0.56) 75%,
     rgba(9, 11, 17, 0) 100%
   );
+  @include tablet {
+    display: none;
+  }
 }
 .content-header {
   display: flex;

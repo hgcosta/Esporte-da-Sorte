@@ -2,7 +2,7 @@
 <?php get_header()?>
 
 <main>
-    <section class="hero" id="">
+    <section class="hero" id="times">
         <header>
             <div class="container content-header">
                 <div class="logo">
@@ -10,13 +10,13 @@
                 </div>
                 <nav class="desktop-nav">
                     <ul class="list-unstyled">
-                        <li><a href="">Times</a></li>
-                        <li><a href="">Competições</a></li>
-                        <li><a href="">Eventos</a></li>
-                        <li><a href="">Redes Sociais</a></li>
-                        <li><a href="">Televisão</a></li>
-                        <li><a href="">Benefícios</a></li>
-                        <li><a href="">Seja um</br>Afiliado</a></li>
+                        <li><a href="#times">Times</a></li>
+                        <li><a href="#competicoes">Competições</a></li>
+                        <li><a href="#eventos">Eventos</a></li>
+                        <li><a href="#redes-sociais">Redes Sociais</a></li>
+                        <li><a href="#tv">Televisão</a></li>
+                        <li><a href="#beneficios">Benefícios</a></li>
+                        <li><a href="#seja-afiliados">Seja um</br>Afiliado</a></li>
                     </ul>
                 </nav>
             </div>
@@ -39,7 +39,7 @@
             </div>
        </div>
     </section>
-    <section class="benefits">
+    <section class="benefits" id="beneficios">
         <h2>Benefícios</h2>
         <div class="container">
             <div class="owl-carousel owl-theme">
@@ -61,13 +61,13 @@
             </div>
                <div class="btn-affiliate">
                     <div class="box-s">
-                        <a href=""><span>Quero</span> ser <strong></br>Afiliado</strong></a>
+                        <a href=""><span>Quero</span> ser <strong>Afiliado</strong></a>
                     </div>
                </div>
             </div>
     </section>
     <section class="games">
-        <h2>Mais de </br>3 Mil games</h2>
+        <h2>Mais de 3 Mil games</h2>
         <div class="container">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/games.png" alt="Games">
             <div class="btn-games box-s">
@@ -75,7 +75,7 @@
             </div>
         </div>
     </section>
-    <section class="competicoes">
+    <section class="competicoes" id="competicoes">
         <div class="container">
             <div class="content-competicoes">
                 <div class="col-img">
@@ -86,21 +86,21 @@
                     <p><strong>ÚNICA MARCA BRASILEIRA</strong> do segmento a anunciar na <strong>Libertadores da América</strong>, além de patrocínios e anúncios nos principais campeonatos estaduais, <strong>regionais e nacionais do país.</strong></p>
                     <div class="btn-affiliate">
                         <div class="box-s">
-                            <a href=""><span>Quero</span> ser <strong></br>Afiliado</strong></a>
+                            <a href=""><span>Quero</span> ser <strong>Afiliado</strong></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="eventos">
+    <section class="eventos" id="eventos">
         <div class="container content-event">
             <div class="col-info">
                 <h3>Uma <strong>marca</strong> que <strong>fala </strong>com o <strong>povo </strong></h3>
                 <p>Queremos você <strong>festejando</strong> junto à nossa <strong>marca</strong>.</p>
                 <div class="btn-affiliate">
                     <div class="box-s">
-                        <a href=""><span>Quero</span> ser <strong></br>Afiliado</strong></a>
+                        <a href=""><span>Quero</span> ser <strong>Afiliado</strong></a>
                     </div>
                 </div>
             </div>
@@ -110,7 +110,7 @@
             </div>
         </div>
     </section>
-    <section class="social">
+    <section class="social" id="redes-sociais">
         
         <div class="container">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bola.png" alt="" class="bola-bg">
@@ -123,14 +123,14 @@
                     <p>O <strong>maior perfil brasileiro</strong> do segmento, <strong>no Instagram</strong>, é nosso. Mais de <strong>1 milhão seguidores prontos para quebrar novos recordes.</strong></p>
                     <div class="btn-affiliate">
                         <div class="box-s">
-                            <a href=""><span>Quero</span> ser <strong></br>Afiliado</strong></a>
+                            <a href=""><span>Quero</span> ser <strong>Afiliado</strong></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="tv">
+    <section class="tv" id="tv">
         <div class="container">
             <div class="content-tv">
                 <div class="col-info">
@@ -138,7 +138,7 @@
                     <p>A <strong>primeira marca do segmento de apostas esportivas</strong> do país a adquirir cotas de patrocínio do <strong>Big Brother Brasil</strong>, um <strong>campeão de audiência e entretenimento.</strong></p>
                     <div class="btn-affiliate">
                         <div class="box-s">
-                            <a href=""><span>Quero</span> ser <strong></br>Afiliado</strong></a>
+                            <a href=""><span>Quero</span> ser <strong>Afiliado</strong></a>
                         </div>
                     </div>
                 </div>
@@ -148,10 +148,10 @@
             </div>
         </div>
     </section>
-    <section class="afiliados">
+    <section class="afiliados" id="seja-afiliados">
         <div class="content-afiliados">
             <div class="col-info">
-                <h2><span>Quero</span> ser <strong></br>Afiliado</strong></h2>
+                <h2><span>Quero</span> ser <strong>Afiliado</strong></h2>
                 <a href="">Quero me tornar um afilado</a>
             </div>
         </div>
@@ -167,13 +167,13 @@
         dots:false,
         responsive:{
             0:{
-                items:1,
+                items:2,
             },
             600:{
-                items:1,
+                items:2,
             },
             700:{
-                items:5,
+                items:2,
             },
             1000:{
                 items:5,
