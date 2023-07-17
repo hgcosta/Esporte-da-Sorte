@@ -5,15 +5,15 @@ header {
     rgba(3, 37, 104, 0.56) 75%,
     rgba(9, 11, 17, 0) 100%
   );
-  @include tablet {
-    display: none;
-  }
 }
 .content-header {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1rem 15px 2rem 15px;
+  @include tablet {
+    justify-content: space-between;
+  }
   .logo {
     margin-right: 2.5rem;
     img {
@@ -21,6 +21,9 @@ header {
     }
   }
   .desktop-nav {
+    @include tablet {
+      display: none;
+    }
     ul {
       display: flex;
       margin-bottom: 0;
@@ -34,6 +37,8 @@ header {
           font-weight: 300;
           text-decoration: none;
           font-size: 0.8rem;
+          letter-spacing: 2px;
+          line-height: 15px;
         }
       }
       li:nth-child(odd) {
@@ -50,6 +55,103 @@ header {
         text-align: center;
         line-height: 10px;
       }
+    }
+  }
+}
+
+.menu-icon {
+  display: none;
+  @include tablet {
+    width: 45px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    display: block;
+    z-index: 9999;
+  }
+}
+.menu-icon__line {
+  height: 5px;
+  width: 45px;
+  display: block;
+  background-color: #d9d9d9;
+  margin-bottom: 7px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s ease, -webkit-transform 0.2s ease;
+  transition: background-color 0.5s ease, -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease, background-color 0.5s ease;
+  transition: transform 0.2s ease, background-color 0.5s ease,
+    -webkit-transform 0.2s ease;
+  border-radius: 3px;
+}
+.menu-icon__line-left {
+  width: 45px;
+  margin-top: 7px;
+}
+.menu-icon__line-right {
+  width: 45px;
+  margin-bottom: 0;
+}
+
+.overlay {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 11111111;
+  top: 0;
+  left: 0;
+  background: #023596f7;
+  // background-color:#fff;
+  overflow-x: hidden;
+  transition: 0.4s;
+  @include tablet {
+    height: 100vh;
+  }
+  a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    width: max-content;
+    margin-left: 4rem;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: principal-regular;
+    @include tablet {
+      font-size: 1.5rem;
+      margin-left: 2rem;
+    }
+    &:hover {
+      color: #fff;
+    }
+    &:focus {
+      color: #fff;
+    }
+  }
+  .overlay-content {
+    position: relative;
+    top: 7%;
+    width: 100%;
+    text-align: left;
+    margin-top: 30px;
+    @include tablet {
+      top: 10%;
+    }
+    @include mobile {
+      top: 25%;
+    }
+  }
+  .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    @include tablet {
+      top: 0;
+      right: 10px;
+      font-size: 40px;
     }
   }
 }

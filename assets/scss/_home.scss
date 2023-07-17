@@ -1,6 +1,8 @@
 body,
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: #022d87;
 }
 .hero {
   background-image: url("../img/bg-hero.jpg");
@@ -8,6 +10,9 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  @include tablet {
+    background-position-x: 54%;
+  }
   .bg-fundo {
     background: linear-gradient(
       0deg,
@@ -44,6 +49,9 @@ html {
           max-width: inherit;
           margin-bottom: 1rem;
           text-align: center;
+        }
+        @include sm-mobile {
+          font-size: 1.8rem;
         }
         strong {
           color: #38e67d;
@@ -117,6 +125,9 @@ html {
         @include tablet {
           width: 80%;
         }
+        @include sm-mobile {
+          width: 90%;
+        }
         &:hover {
           border-radius: 15px;
           width: 415px;
@@ -159,10 +170,111 @@ html {
   background-color: #022d87;
   width: 100%;
   padding: 1.5rem 0;
+  .slick-slide {
+    img {
+      width: 202px;
+      @include tablet {
+        width: 100%;
+        margin: 0 0.5rem;
+        height: 295px;
+      }
+    }
+  }
+  .slick-list {
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 93px;
+      height: 366px;
+      top: 0;
+      z-index: 9;
+      left: -2px;
+      background: linear-gradient(
+        90deg,
+        #022d87 0%,
+        rgba(252, 176, 69, 0) 100%
+      );
+      @include tablet {
+        background: none;
+      }
+    }
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 73px;
+      height: 366px;
+      top: 0;
+      z-index: 9;
+      right: -2px;
+      background: linear-gradient(
+        90deg,
+        rgba(131, 58, 180, 0) 0%,
+        rgba(253, 29, 29, 0) 0%,
+        #022d87 100%
+      );
+      @include tablet {
+        background: none;
+      }
+    }
+  }
+  .item {
+    height: 365px;
+    display: flex;
+    align-items: flex-end;
+    @include tablet {
+      height: inherit;
+    }
+    img {
+      transition: all ease-in-out 0.5s;
+    }
+  }
+  .slick-slider {
+    margin-bottom: 2rem;
+  }
+  .slick-center {
+    img {
+      height: 365px;
+      @include tablet {
+        height: 295px;
+      }
+    }
+  }
+  .slick-prev {
+    margin-right: 3rem;
+    background-size: 100% !important;
+    height: 34px !important;
+    width: 32px !important;
+    background-repeat: no-repeat !important;
+    background: url("../icons/arrow.png") !important;
+    background-size: 100% !important;
+    background-repeat: no-repeat !important;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 153px;
+    left: -60px;
+    border: none;
+  }
+  .slick-next {
+    margin-right: 3rem;
+    background-size: 100% !important;
+    height: 34px !important;
+    width: 32px !important;
+    background: url("../icons/arrow.png") !important;
+    background-size: 100% !important;
+    background-repeat: no-repeat !important;
+    background-repeat: no-repeat !important;
+    position: absolute;
+    top: 153px;
+    right: -110px;
+    border: none;
+  }
   h2 {
     font-family: principal-bold;
     text-transform: uppercase;
     color: #fff;
+
     font-size: 2.4rem;
     margin-bottom: 1rem;
     text-align: center;
@@ -173,6 +285,39 @@ html {
       font-size: 2rem;
     }
   }
+  .owl-nav {
+    display: block !important;
+    position: relative;
+    .owl-prev {
+      width: 30px;
+      height: 30px;
+      background-image: url("../icons/arrow.png") !important;
+      background-size: cover;
+      margin-right: 3rem;
+      background-size: 100% !important;
+      height: 34px !important;
+      width: 32px !important;
+      background-repeat: no-repeat !important;
+      transform: rotate(180deg);
+      position: absolute;
+      top: -210px;
+      left: -60px;
+    }
+    .owl-next {
+      width: 30px;
+      height: 30px;
+      background-image: url("../icons/arrow.png") !important;
+      background-size: cover;
+      margin-left: 3rem;
+      background-size: 100% !important;
+      height: 34px !important;
+      width: 32px !important;
+      background-repeat: no-repeat !important;
+      position: absolute;
+      top: -210px;
+      right: -60px;
+    }
+  }
   .owl-carousel {
     margin-bottom: 2rem;
     .item {
@@ -180,6 +325,39 @@ html {
         display: block;
         width: 100%;
         border-radius: 10px;
+      }
+    }
+    .owl-stage-outer {
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 73px;
+        height: 362px;
+        top: 0;
+        z-index: 9;
+        left: -2px;
+        background: linear-gradient(
+          90deg,
+          #022d87 0%,
+          rgba(252, 176, 69, 0) 100%
+        );
+      }
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 73px;
+        height: 362px;
+        top: 0;
+        z-index: 9;
+        right: -2px;
+        background: linear-gradient(
+          90deg,
+          rgba(131, 58, 180, 0) 0%,
+          rgba(253, 29, 29, 0) 0%,
+          #022d87 100%
+        );
       }
     }
   }
@@ -203,6 +381,10 @@ html {
       left: 1px;
       z-index: 1;
       opacity: 0.5;
+      @include tablet {
+        width: 415px;
+        height: 198px;
+      }
     }
   }
   a {
@@ -463,6 +645,14 @@ html {
             top: 19px;
             left: 1px;
             z-index: 1;
+            @include tablet {
+              width: 266px;
+              height: 84px;
+            }
+            @include sm-mobile {
+              width: 232px;
+              height: 55px;
+            }
           }
         }
         a {
@@ -486,6 +676,10 @@ html {
             width: 100%;
             font-size: 0.6rem;
             padding: 0.5rem;
+          }
+          @include sm-mobile {
+            font-size: 0.55rem;
+            padding: 0.5rem 0.2rem;
           }
           &:hover {
             width: 320px;
@@ -533,8 +727,8 @@ html {
         @include tablet {
           font-size: 1.2rem;
           text-align: center;
-          margin-bottom: 0.5rem;
-          max-width: inherit;
+          max-width: 300px;
+          margin: 0 auto 0.5rem auto;
         }
         strong {
           color: #38e67d;
@@ -550,6 +744,7 @@ html {
           text-align: center;
           margin: 0 auto;
           font-size: 1.1rem;
+          line-height: 17px;
         }
         strong {
           font-family: secundaria-bold;
@@ -593,6 +788,10 @@ html {
               width: 400px;
               height: 44px;
               left: 61px;
+            }
+            @include sm-mobile {
+              width: 380px;
+              height: 47px;
             }
           }
         }
@@ -817,6 +1016,9 @@ html {
             width: 100%;
             font-size: 0.95rem;
           }
+          @include sm-mobile {
+            font-size: 0.55rem;
+          }
           span {
             font-family: principal-bold;
           }
@@ -933,6 +1135,10 @@ html {
               width: 280px;
               height: 62px;
             }
+            @include sm-mobile {
+              width: 260px;
+              height: 37px;
+            }
           }
         }
         a {
@@ -955,13 +1161,15 @@ html {
           transition: all ease-in-out 0.5s;
           &:hover {
             border-radius: 15px;
-
             width: 320px;
           }
           @include tablet {
             width: 100%;
             font-size: 0.6rem;
             padding: 0.5rem;
+          }
+          @include sm-mobile {
+            font-size: 0.55rem;
           }
           span {
             font-family: principal-bold;
@@ -1076,8 +1284,12 @@ html {
             @include tablet {
               width: 390px;
               height: 74px;
-              top: 9px;
+              top: 4px;
               left: 50px;
+            }
+            @include sm-mobile {
+              width: 370px;
+              height: 74px;
             }
           }
         }

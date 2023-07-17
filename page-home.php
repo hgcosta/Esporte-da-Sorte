@@ -6,7 +6,22 @@
         <header>
             <div class="container content-header">
                 <div class="logo">
-                    <a href=""><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/icons/logo-esporte-da-sorte-header.png" alt="Logo Esporte da Sorte"></a>
+                    <a href="<?php bloginfo('url') ?>/home/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/icons/logo-esporte-da-sorte-header.png" alt="Logo Esporte da Sorte"></a>
+                </div>
+                <div class="menu-icon hover-target" onclick="openNav()">
+                    <span class="menu-icon__line menu-icon__line-left"></span>
+                    <span class="menu-icon__line"></span>
+                    <span class="menu-icon__line menu-icon__line-right"></span>
+                </div>
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a onclick="closeNav()" href="#home">Home</a>
+                        <a onclick="closeNav()" href="#games">Games</a>
+                        <a onclick="closeNav()" href="#beneficios">Benefícios</a>
+                        <a onclick="closeNav()" href="#afiliados">Quero ser afiliado</a>
+
+                    </div>
                 </div>
                 <nav class="desktop-nav">
                     <ul class="list-unstyled">
@@ -30,7 +45,7 @@
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/icons/logos-times.png" alt="Time brasileiros do campeonato Brasileirão série A">
                     </div>
                     <div class="box-s">
-                        <a href=""><span>Quero</span> Ser <strong>Afiliado</strong></a>
+                        <a href="<?php bloginfo('url') ?>/afiliados/"><span>Quero</span> Ser <strong>Afiliado</strong></a>
                     </div>
                 </div>
                 <div class="col-img">
@@ -42,26 +57,29 @@
     <section class="benefits" id="beneficios">
         <h2>Benefícios</h2>
         <div class="container">
-            <div class="owl-carousel owl-theme">
+            <div class="center">
                 <div class="item">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/avarage.jpg" alt="">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/gerente-de-conta.png" alt="Gerente de conta">
                 </div>
                 <div class="item">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/24h.jpg" alt="">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/suporte-humanizado.png" alt="Suporte Humanizado">
                 </div>
                 <div class="item">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/24h.jpg" alt="">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/jogos-exclusivos.png" alt="Jogos exclusivos">
                 </div>
                 <div class="item">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/24h.jpg" alt="">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/taxa-media.png" alt="Taxa média de 70% de FTD">
                 </div>
                 <div class="item">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/more.jpg" alt="">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/material-promocional.png" alt="Material Promocional">
+                </div>
+                <div class="item">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/vantagem-novos.png" alt="Vantagens para os novos">
                 </div>
             </div>
                <div class="btn-affiliate">
                     <div class="box-s">
-                        <a href=""><span>Quero</span> ser <strong>Afiliado</strong></a>
+                        <a href="<?php bloginfo('url') ?>/afiliados/"><span>Quero</span> ser <strong>Afiliado</strong></a>
                     </div>
                </div>
             </div>
@@ -69,9 +87,9 @@
     <section class="games">
         <h2>Mais de 3 Mil games</h2>
         <div class="container">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/games.png" alt="Games">
+            <a href="https://www.esportesdasorte.com/ptb/bet/ultraplay-esports" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/games.png" alt="Games"></a>
             <div class="btn-games box-s">
-                <a href=""><span>Quero</span> ser <strong>Afiliado</strong></a>
+                <a href="<?php bloginfo('url') ?>/afiliados/"><span>Quero</span> ser <strong>Afiliado</strong></a>
             </div>
         </div>
     </section>
@@ -88,7 +106,7 @@
                         <p><strong>ÚNICA MARCA BRASILEIRA</strong> do segmento a anunciar na <strong>Libertadores da América</strong>, além de patrocínios e anúncios nos principais campeonatos estaduais, <strong>regionais e nacionais do país.</strong></p>
                         <div class="btn-affiliate">
                             <div class="box-s">
-                                <a href=""><span>Quero</span> ser <strong>Afiliado</strong></a>
+                                <a href="<?php bloginfo('url') ?>/afiliados/"><span>Quero</span> ser <strong>Afiliado</strong></a>
                             </div>
                         </div>
                     </div>
@@ -103,7 +121,7 @@
                 <p>Queremos você <strong>festejando</strong> junto à nossa <strong>marca</strong>.</p>
                 <div class="btn-affiliate">
                     <div class="box-s">
-                        <a href=""><span>Quero</span> ser <strong>Afiliado</strong></a>
+                        <a href="<?php bloginfo('url') ?>/afiliados/"><span>Quero</span> ser <strong>Afiliado</strong></a>
                     </div>
                 </div>
             </div>
@@ -125,7 +143,7 @@
                     <p>O <strong>maior perfil brasileiro</strong> do segmento, <strong>no Instagram</strong>, é nosso. Mais de <strong>1 milhão seguidores prontos para quebrar novos recordes.</strong></p>
                     <div class="btn-affiliate">
                         <div class="box-s">
-                            <a href=""><span>Quero</span> ser <strong>Afiliado</strong></a>
+                            <a href="<?php bloginfo('url') ?>/afiliados/"><span>Quero</span> ser <strong>Afiliado</strong></a>
                         </div>
                     </div>
                 </div>
@@ -140,7 +158,7 @@
                         <p>O <strong>maior perfil brasileiro</strong> do segmento, <strong>no Instagram</strong>, é nosso. Mais de <strong>1 milhão seguidores prontos para quebrar novos recordes.</strong></p>
                         <div class="btn-affiliate">
                             <div class="box-s">
-                                <a href=""><span>Quero</span> ser <strong>Afiliado</strong></a>
+                                <a href="<?php bloginfo('url') ?>/afiliados/"><span>Quero</span> ser <strong>Afiliado</strong></a>
                             </div>
                         </div>
                     </div>
@@ -156,7 +174,7 @@
                     <p>A <strong>primeira marca do segmento de apostas esportivas</strong> do país a adquirir cotas de patrocínio do <strong>Big Brother Brasil</strong>, um <strong>campeão de audiência e entretenimento.</strong></p>
                     <div class="btn-affiliate">
                         <div class="box-s">
-                            <a href=""><span>Quero</span> ser <strong>Afiliado</strong></a>
+                            <a href="<?php bloginfo('url') ?>/afiliados/"><span>Quero</span> ser <strong>Afiliado</strong></a>
                         </div>
                     </div>
                 </div>
@@ -170,34 +188,38 @@
         <div class="content-afiliados">
             <div class="col-info">
                 <h2><span>Quero</span></br> ser <strong>Afiliado</strong></h2>
-                <a href="">Eu <strong>Quero</strong></br> ser <strong>Afiliado</strong></a>
+                <a href="<?php bloginfo('url') ?>/afiliados/">Eu <strong>Quero</strong></br> ser <strong>Afiliado</strong></a>
             </div>
         </div>
     </section>
 </main> 
-
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script>
-        $('.owl-carousel').owlCarousel({
-        loop:true,
-        autoplay:false,
-        margin:25,
-        responsiveClass:true,
-        dots:false,
-        responsive:{
-            0:{
-                items:2,
-            },
-            600:{
-                items:2,
-            },
-            700:{
-                items:2,
-            },
-            1000:{
-                items:5,
-            }
-         }
-        })
+
+
+
+$('.center').slick({
+  centerMode: true,
+  infinite: true,
+  centerPadding: '0px',
+  slidesToShow: 5,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '0',
+        slidesToShow: 2
+      }
+    }
+  ]
+});
+var prevArrow = document.querySelector('.slick-prev').innerHTML = ''
+
+var nextArrow = document.querySelector('.slick-next').innerHTML = ''
     </script>
 
 <?php get_footer()?>
