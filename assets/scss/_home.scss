@@ -1,3 +1,7 @@
+body,
+html {
+  overflow-x: hidden;
+}
 .hero {
   background-image: url("../img/bg-hero.jpg");
   width: 100%;
@@ -262,14 +266,14 @@
     &::after {
       content: "";
       display: block;
-      width: 495px;
+      width: 485px;
       height: 73px;
       background-image: url("../img/shadow-games.png");
       background-repeat: no-repeat;
       background-size: 100%;
       position: absolute;
       top: -1px;
-      left: 421px;
+      left: 376px;
       z-index: 1;
     }
   }
@@ -320,9 +324,6 @@
   background-color: #022d87;
   width: 100%;
   padding-bottom: 2.5rem;
-  @include tablet {
-    display: none;
-  }
   .content-competicoes {
     display: flex;
     padding: 2rem 0rem 0 2rem;
@@ -336,6 +337,28 @@
     background-position-x: -20px;
     position: relative;
     box-shadow: 0px 0px 13px 0px rgba(17, 81, 161, 1);
+    @include tablet {
+      flex-direction: column;
+      padding: 1.5rem 0 1.5rem 0.5rem;
+    }
+    .info-mobile {
+      display: none;
+      font-family: principal-bold;
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 1.45rem;
+      margin-bottom: 1.3rem;
+      letter-spacing: 2px;
+      @include tablet {
+        display: block;
+      }
+      strong {
+        color: #38e67d;
+      }
+    }
+    .content {
+      display: flex;
+    }
     &::before {
       content: "";
       display: block;
@@ -348,6 +371,9 @@
       top: 305px;
       opacity: 1;
       right: -81px;
+      @include tablet {
+        height: 110px;
+      }
     }
     &::after {
       content: "";
@@ -361,16 +387,27 @@
       top: 33px;
       opacity: 1;
       left: -80px;
+      @include tablet {
+        height: 110px;
+      }
     }
     .col-img {
       width: 40%;
       img {
         width: 100%;
+        @include tablet {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+        }
       }
     }
     .col-info {
       width: 60%;
       padding: 2rem 4rem;
+      @include tablet {
+        padding: 1rem 0.5rem;
+      }
       h3 {
         font-family: principal-bold;
         text-transform: uppercase;
@@ -378,6 +415,9 @@
         font-size: 1.9rem;
         margin-bottom: 1.3rem;
         letter-spacing: 2px;
+        @include tablet {
+          display: none;
+        }
         strong {
           color: #38e67d;
         }
@@ -387,6 +427,10 @@
         font-family: secundaria-l;
         max-width: 440px;
         font-size: 1.1rem;
+        @include tablet {
+          max-width: inherit;
+          font-size: 0.95rem;
+        }
         strong {
           font-family: secundaria-bold;
         }
@@ -396,10 +440,17 @@
         display: flex;
         justify-content: center;
         margin-top: 3rem;
+        @include tablet {
+          margin-top: 1rem;
+        }
         .box-s {
           margin-left: 1.5rem;
           width: 400px;
           position: relative;
+          @include tablet {
+            width: 100%;
+            margin-left: 0;
+          }
           &::after {
             content: "";
             display: block;
@@ -431,6 +482,11 @@
           z-index: 2;
           position: relative;
           transition: all ease-in-out 0.5s;
+          @include tablet {
+            width: 100%;
+            font-size: 0.6rem;
+            padding: 0.5rem;
+          }
           &:hover {
             width: 320px;
             border-radius: 15px;
@@ -451,15 +507,21 @@
 .eventos {
   background-color: #022d87;
   width: 100%;
-  @include tablet {
-    display: none;
-  }
   .content-event {
     display: flex;
     padding-bottom: 8rem;
+    @include tablet {
+      flex-direction: column;
+      padding: 0 7px 10rem 7px;
+    }
     .col-info {
       width: 50%;
       padding-left: 5rem;
+      @include tablet {
+        width: 100%;
+        padding-left: 0;
+        padding-bottom: 2rem;
+      }
       h3 {
         font-family: principal-bold;
         text-transform: uppercase;
@@ -468,6 +530,12 @@
         margin-bottom: 1.3rem;
         letter-spacing: 2px;
         max-width: 320px;
+        @include tablet {
+          font-size: 1.2rem;
+          text-align: center;
+          margin-bottom: 0.5rem;
+          max-width: inherit;
+        }
         strong {
           color: #38e67d;
         }
@@ -477,6 +545,12 @@
         font-family: secundaria-l;
         max-width: 440px;
         font-size: 0.95rem;
+        @include tablet {
+          max-width: 250px;
+          text-align: center;
+          margin: 0 auto;
+          font-size: 1.1rem;
+        }
         strong {
           font-family: secundaria-bold;
         }
@@ -486,10 +560,23 @@
         display: flex;
         justify-content: center;
         margin-top: 3rem;
+        @include tablet {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin-top: 0;
+        }
         .box-s {
           margin-left: 1.5rem;
           width: 400px;
           position: relative;
+          @include tablet {
+            margin-left: 0;
+            width: 100%;
+            margin-top: 0.5rem;
+            display: flex;
+            justify-content: center;
+          }
           &::after {
             content: "";
             display: block;
@@ -502,6 +589,11 @@
             top: 29px;
             left: 1px;
             z-index: 1;
+            @include tablet {
+              width: 400px;
+              height: 44px;
+              left: 61px;
+            }
           }
         }
         a {
@@ -521,6 +613,12 @@
           z-index: 2;
           position: relative;
           transition: all ease-in-out 0.5s;
+          @include tablet {
+            padding: 0.5rem 1.5rem;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            width: 290px;
+          }
           &:hover {
             width: 320px;
             border-radius: 15px;
@@ -540,10 +638,18 @@
       width: 50%;
       display: flex;
       position: relative;
+      @include tablet {
+        width: 100%;
+        justify-content: center;
+      }
       img {
         width: 300px;
         height: 300px;
         box-shadow: 0px 0px 11px 0px rgba(1, 38, 117, 1);
+        @include tablet {
+          width: 300px;
+          height: 230px;
+        }
       }
       img:nth-child(1) {
         position: absolute;
@@ -554,6 +660,11 @@
         position: relative;
         left: 200px;
         top: 90px;
+        @include tablet {
+          position: relative;
+          left: 20px;
+          top: 120px;
+        }
       }
     }
   }
@@ -590,6 +701,7 @@
     background-position-x: -20px;
     position: relative;
     @include tablet {
+      display: none;
       padding: 2rem 0.5rem 0 0.5rem;
     }
     .col-img {
@@ -603,7 +715,7 @@
         width: 300px;
         @include tablet {
           width: 100%;
-          height: 280px;
+          height: 250px;
         }
       }
     }
@@ -623,6 +735,7 @@
         @include tablet {
           font-size: 1.25rem;
           margin-bottom: 0.5rem;
+          display: none;
         }
         strong {
           color: #38e67d;
@@ -716,6 +829,152 @@
       }
     }
   }
+
+  .content-social-mobile {
+    display: none;
+    padding: 1.5rem 1rem;
+    background-image: url("../img/bg-03.png");
+    background-size: 750px;
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-position-x: -20px;
+    position: relative;
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+    }
+    h3 {
+      font-family: principal-bold;
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 1.9rem;
+      margin-bottom: 1.3rem;
+      letter-spacing: 2px;
+      @include tablet {
+        font-size: 1.25rem;
+        margin-bottom: 1.3rem;
+      }
+      strong {
+        color: #38e67d;
+      }
+    }
+    .content {
+      display: flex;
+    }
+    .col-img {
+      width: 40%;
+      display: flex;
+      justify-content: flex-end;
+      @include tablet {
+        align-items: flex-end;
+      }
+      img {
+        width: 300px;
+        @include tablet {
+          width: 100%;
+          height: 250px;
+        }
+      }
+    }
+    .col-info {
+      width: 60%;
+      padding: 2rem 4rem;
+      @include tablet {
+        padding: 1rem 0.5rem;
+      }
+
+      p {
+        color: #fff;
+        font-family: secundaria-l;
+        max-width: 440px;
+        font-size: 1.1rem;
+        @include tablet {
+          max-width: inherit;
+          font-size: 0.95rem;
+        }
+        strong {
+          font-family: secundaria-bold;
+        }
+      }
+      .btn-affiliate {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+        @include tablet {
+          margin-top: 1.3rem;
+          margin-left: 0;
+        }
+        .box-s {
+          margin-left: 1.5rem;
+          width: 400px;
+          position: relative;
+          @include tablet {
+            margin-left: 0;
+            width: 100%;
+          }
+          &::after {
+            content: "";
+            display: block;
+            width: 440px;
+            height: 168px;
+            background-image: url("../img/sombra-coroa.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            position: absolute;
+            top: 9px;
+            left: 1px;
+            z-index: 1;
+            @include tablet {
+              top: 9px;
+              left: 1px;
+              width: 280px;
+              height: 62px;
+            }
+          }
+        }
+        a {
+          color: #fff;
+          display: block;
+          width: 300px;
+          text-align: center;
+          padding: 0.5rem 1rem;
+          background-color: #023596;
+          border: solid 3px #38e67d;
+          border-radius: 30px;
+          font-size: 1rem;
+          text-transform: uppercase;
+          font-family: principal-l;
+          letter-spacing: 2px;
+
+          text-decoration: none;
+          z-index: 2;
+          position: relative;
+          transition: all ease-in-out 0.5s;
+          &:hover {
+            border-radius: 15px;
+
+            width: 320px;
+          }
+          @include tablet {
+            width: 100%;
+            font-size: 0.6rem;
+            padding: 0.5rem;
+          }
+          span {
+            font-family: principal-bold;
+          }
+          strong {
+            color: #38e67d;
+            font-family: principal-bold;
+            transition: all ease-in-out 0.5s;
+          }
+        }
+      }
+    }
+  }
 }
 .tv {
   background-color: #022d87;
@@ -744,7 +1003,7 @@
         letter-spacing: 2px;
         position: relative;
         @include tablet {
-          font-size: 1.25rem;
+          font-size: 2rem;
           margin-bottom: 0.5rem;
           text-align: center;
         }
@@ -761,6 +1020,11 @@
           opacity: 1;
           left: -30px;
           transform: rotate(320deg);
+          @include tablet {
+            left: 10px;
+            width: 45px;
+            height: 45px;
+          }
         }
         strong {
           color: #38e67d;
@@ -851,6 +1115,10 @@
             opacity: 1;
             right: -30px;
             transform: rotate(360deg);
+            @include tablet {
+              width: 45px;
+              height: 45px;
+            }
           }
           span {
             font-family: principal-bold;
@@ -902,6 +1170,12 @@
       background-repeat: no-repeat;
       background-size: cover;
       height: 328px;
+      @include tablet {
+        width: 90%;
+        padding: 1.5rem 1rem;
+        background-position-x: -28px;
+        height: 278px;
+      }
       h2 {
         font-family: principal-l;
         font-family: principal-l;
@@ -911,6 +1185,9 @@
         margin-bottom: 1.3rem;
         letter-spacing: 2px;
         text-align: center;
+        @include tablet {
+          font-size: 2.5rem;
+        }
         strong {
           color: #38e67d;
           font-family: principal-bold;
@@ -933,6 +1210,10 @@
         font-size: 1.6rem;
         letter-spacing: 2px;
         transition: all ease-in-out 0.5s;
+        @include tablet {
+          width: 100%;
+          font-size: 1.4rem;
+        }
         strong {
           font-family: principal-bold;
         }

@@ -78,15 +78,18 @@
     <section class="competicoes" id="competicoes">
         <div class="container">
             <div class="content-competicoes">
-                <div class="col-img">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/taca-papai.png" alt="">
-                </div>
-                <div class="col-info">
-                    <h3>Alcance além das <strong>quatro linhas</strong></h3>
-                    <p><strong>ÚNICA MARCA BRASILEIRA</strong> do segmento a anunciar na <strong>Libertadores da América</strong>, além de patrocínios e anúncios nos principais campeonatos estaduais, <strong>regionais e nacionais do país.</strong></p>
-                    <div class="btn-affiliate">
-                        <div class="box-s">
-                            <a href=""><span>Quero</span> ser <strong>Afiliado</strong></a>
+                <h3 class="info-mobile">Alcance além das <strong>quatro linhas</strong></h3>
+                <div class="content">
+                    <div class="col-img">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/taca-papai.png" alt="">
+                    </div>
+                    <div class="col-info">
+                        <h3>Alcance além das <strong>quatro linhas</strong></h3>
+                        <p><strong>ÚNICA MARCA BRASILEIRA</strong> do segmento a anunciar na <strong>Libertadores da América</strong>, além de patrocínios e anúncios nos principais campeonatos estaduais, <strong>regionais e nacionais do país.</strong></p>
+                        <div class="btn-affiliate">
+                            <div class="box-s">
+                                <a href=""><span>Quero</span> ser <strong>Afiliado</strong></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -111,9 +114,8 @@
         </div>
     </section>
     <section class="social" id="redes-sociais">
-        
         <div class="container">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bola.png" alt="" class="bola-bg">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bola.png" alt="" class="bola-bg">
             <div class="content-social">
                 <div class="col-img">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/instagram.png" alt="Instagram Esporte da Sorte">
@@ -124,6 +126,22 @@
                     <div class="btn-affiliate">
                         <div class="box-s">
                             <a href=""><span>Quero</span> ser <strong>Afiliado</strong></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-social-mobile">
+                <h3>No <strong>mundo digital</strong>, a nossa <strong>marca é uma realidade</strong>.</h3>
+                <div class="content">  
+                    <div class="col-img">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/instagram.png" alt="Instagram Esporte da Sorte">
+                    </div>
+                    <div class="col-info">
+                        <p>O <strong>maior perfil brasileiro</strong> do segmento, <strong>no Instagram</strong>, é nosso. Mais de <strong>1 milhão seguidores prontos para quebrar novos recordes.</strong></p>
+                        <div class="btn-affiliate">
+                            <div class="box-s">
+                                <a href=""><span>Quero</span> ser <strong>Afiliado</strong></a>
+                            </div>
                         </div>
                     </div>
                 </div>
