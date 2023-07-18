@@ -21,6 +21,42 @@ $big: 1750px;
     @content;
   }
 }
+
+@mixin iphone14 {
+  @media only screen and (max-width: 430px) and (max-height: 932px) {
+    @content;
+  }
+}
+
+@mixin iphone12 {
+  @media only screen and (max-width: 390px) and (max-height: 844px) {
+    @content;
+  }
+}
+
+@mixin iphoneXR {
+  @media only screen and (max-width: 414px) and (max-height: 896px) {
+    @content;
+  }
+}
+
+@mixin iphoneX {
+  @media only screen and (max-width: 375px) and (max-height: 812px) {
+    @content;
+  }
+}
+
+@mixin iphone14pro {
+  @media only screen and (max-width: 393px) and (max-height: 852px) {
+    @content;
+  }
+}
+@mixin iphone11pro {
+  @media only screen and (max-width: 414px) and (max-height: 896px) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media only screen and (max-width: $tablet) {
     @content;

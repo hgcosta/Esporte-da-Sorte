@@ -549,6 +549,12 @@ html {
   z-index: 1;
 }
 
+@media only screen and (max-width: 900px) {
+  .games .box-s::after {
+    display: none;
+  }
+}
+
 .games .btn-games {
   display: flex;
   justify-content: center;
@@ -833,6 +839,18 @@ html {
   }
 }
 
+@media only screen and (max-width: 390px) and (max-height: 844px) {
+  .competicoes .content-competicoes .col-info .btn-affiliate .box-s::after {
+    height: 62px;
+  }
+}
+
+@media only screen and (max-width: 430px) and (max-height: 932px) {
+  .competicoes .content-competicoes .col-info .btn-affiliate .box-s::after {
+    height: 114px;
+  }
+}
+
 .competicoes .content-competicoes .col-info .btn-affiliate a {
   color: #fff;
   display: block;
@@ -1004,7 +1022,7 @@ html {
 
 @media only screen and (max-width: 900px) {
   .eventos .content-event .col-info .btn-affiliate .box-s::after {
-    width: 400px;
+    width: 390px;
     height: 44px;
     left: 61px;
   }
@@ -1012,15 +1030,21 @@ html {
 
 @media only screen and (max-width: 400px) {
   .eventos .content-event .col-info .btn-affiliate .box-s::after {
-    width: 380px;
+    width: 350px;
     height: 47px;
   }
 }
 
 @media only screen and (max-width: 345px) {
   .eventos .content-event .col-info .btn-affiliate .box-s::after {
-    width: 350px;
+    width: 330px;
     height: 47px;
+  }
+}
+
+@media only screen and (max-width: 414px) and (max-height: 896px) {
+  .eventos .content-event .col-info .btn-affiliate .box-s::after {
+    height: 55px;
   }
 }
 
@@ -1090,6 +1114,7 @@ html {
   .eventos .content-event .col-img img {
     width: 300px;
     height: 230px;
+    box-shadow: none;
   }
 }
 
@@ -1355,6 +1380,7 @@ html {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    padding-bottom: 0;
   }
 }
 
@@ -1530,6 +1556,42 @@ html {
 @media only screen and (max-width: 345px) {
   .social .content-social-mobile .col-info .btn-affiliate .box-s::after {
     width: 230px;
+  }
+}
+
+@media only screen and (max-width: 390px) and (max-height: 844px) {
+  .social .content-social-mobile .col-info .btn-affiliate .box-s::after {
+    height: 62px;
+  }
+}
+
+@media only screen and (max-width: 430px) and (max-height: 932px) {
+  .social .content-social-mobile .col-info .btn-affiliate .box-s::after {
+    height: 84px;
+  }
+}
+
+@media only screen and (max-width: 414px) and (max-height: 896px) {
+  .social .content-social-mobile .col-info .btn-affiliate .box-s::after {
+    height: 85px;
+  }
+}
+
+@media only screen and (max-width: 375px) and (max-height: 812px) {
+  .social .content-social-mobile .col-info .btn-affiliate .box-s::after {
+    height: 60px;
+  }
+}
+
+@media only screen and (max-width: 393px) and (max-height: 852px) {
+  .social .content-social-mobile .col-info .btn-affiliate .box-s::after {
+    height: 60px;
+  }
+}
+
+@media only screen and (max-width: 414px) and (max-height: 896px) {
+  .social .content-social-mobile .col-info .btn-affiliate .box-s::after {
+    height: 62px;
   }
 }
 
@@ -1725,7 +1787,7 @@ html {
 @media only screen and (max-width: 900px) {
   .tv .content-tv .col-info .btn-affiliate .box-s::after {
     width: 390px;
-    height: 74px;
+    height: 350px;
     top: 4px;
     left: 50px;
   }
@@ -1734,14 +1796,14 @@ html {
 @media only screen and (max-width: 400px) {
   .tv .content-tv .col-info .btn-affiliate .box-s::after {
     width: 370px;
-    height: 74px;
+    height: 350px;
   }
 }
 
 @media only screen and (max-width: 345px) {
   .tv .content-tv .col-info .btn-affiliate .box-s::after {
     width: 340px;
-    height: 70px;
+    height: 350px;
   }
 }
 
@@ -1824,6 +1886,8 @@ html {
 .afiliados {
   background-color: #022d87;
   width: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 .afiliados .content-afiliados {
