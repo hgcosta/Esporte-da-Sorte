@@ -43,7 +43,7 @@
             <div class="container content-hero">
                 <div class="col-info">
                     <h1>Em <strong>campo,</strong> </br>a gente <strong>Entra</strong> pra vencer</h1>
-                    <p>Somos <strong>patrocinadores oficiais</strong> de alguns dos mais <strong>relevantes times de futebol do Brasil </strong>entre eles:</p>
+                    <p>Somos <strong>patrocinadores oficiais</strong> de alguns dos mais <strong>relevantes times de futebol do Brasil, </strong>entre eles:</p>
                     <div class="teams">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/icons/logos-times.png" alt="Time brasileiros do campeonato Brasileirão série A">
                     </div>
@@ -148,7 +148,7 @@
                 </div>
                 <div class="col-info">
                     <h3>No <strong>mundo digital</strong>, a nossa <strong>marca é uma realidade</strong>.</h3>
-                    <p>O <strong>maior perfil brasileiro</strong> do segmento, <strong>no Instagram</strong>, é nosso. Mais de <strong>1 milhão seguidores prontos para quebrar novos recordes.</strong></p>
+                    <p>O <strong>maior perfil brasileiro</strong> do segmento, <strong>no Instagram</strong>, é nosso. Mais de <strong>1 milhão de seguidores prontos para quebrar novos recordes.</strong></p>
                     <div class="btn-affiliate">
                         <div class="box-s">
                             <a href="<?php bloginfo('url') ?>/afiliados/"><span>Quero</span> ser <strong>Afiliado</strong></a>
@@ -163,7 +163,7 @@
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/instagram.png" alt="Instagram Esporte da Sorte">
                     </div>
                     <div class="col-info">
-                        <p>O <strong>maior perfil brasileiro</strong> do segmento, <strong>no Instagram</strong>, é nosso. Mais de <strong>1 milhão seguidores prontos para quebrar novos recordes.</strong></p>
+                        <p>O <strong>maior perfil brasileiro</strong> do segmento, <strong>no Instagram</strong>, é nosso. Mais de <strong>1 milhão de seguidores prontos para quebrar novos recordes.</strong></p>
                         <div class="btn-affiliate">
                             <div class="box-s">
                                 <a href="<?php bloginfo('url') ?>/afiliados/"><span>Quero</span> ser <strong>Afiliado</strong></a>
@@ -217,7 +217,7 @@ $('.center').slick({
     {
       breakpoint: 600,
       settings: {
-        arrows: false,
+        arrows: true,
         centerMode: true,
         centerPadding: '0',
         slidesToShow: 2

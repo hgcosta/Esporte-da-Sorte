@@ -324,6 +324,14 @@ html {
   border: none;
 }
 
+@media only screen and (max-width: 900px) {
+  .benefits .slick-prev {
+    top: 133px;
+    left: inherit;
+    z-index: 3;
+  }
+}
+
 .benefits .slick-next {
   margin-right: 3rem;
   background-size: 100% !important;
@@ -337,6 +345,14 @@ html {
   top: 153px;
   right: -110px;
   border: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .benefits .slick-next {
+    top: 133px;
+    right: -50px;
+    z-index: 3;
+  }
 }
 
 .benefits h2 {
@@ -588,7 +604,7 @@ html {
 @media only screen and (max-width: 900px) {
   .games .btn-games a {
     left: 0;
-    top: -19px;
+    top: -1px;
     width: 100%;
   }
 }
@@ -913,7 +929,7 @@ html {
 @media only screen and (max-width: 900px) {
   .eventos .content-event {
     flex-direction: column;
-    padding: 0 7px 10rem 7px;
+    padding: 0 7px 13rem 7px;
   }
 }
 
@@ -1134,7 +1150,7 @@ html {
   .eventos .content-event .col-img img:nth-child(2) {
     position: relative;
     left: 20px;
-    top: 120px;
+    top: 170px;
   }
 }
 
@@ -2240,6 +2256,7 @@ footer .content-footer img {
 @media only screen and (max-width: 900px) {
   .afiliados-page iframe {
     width: 100%;
+    height: 3900px;
   }
 }
 

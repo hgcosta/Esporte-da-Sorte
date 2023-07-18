@@ -260,6 +260,11 @@ html {
     top: 153px;
     left: -60px;
     border: none;
+    @include tablet {
+      top: 133px;
+      left: inherit;
+      z-index: 3;
+    }
   }
   .slick-next {
     margin-right: 3rem;
@@ -274,6 +279,11 @@ html {
     top: 153px;
     right: -110px;
     border: none;
+    @include tablet {
+      top: 133px;
+      right: -50px;
+      z-index: 3;
+    }
   }
   h2 {
     font-family: principal-bold;
@@ -501,7 +511,7 @@ html {
       line-height: 17px;
       @include tablet {
         left: 0;
-        top: -19px;
+        top: -1px;
         width: 100%;
       }
       &:hover {
@@ -742,7 +752,7 @@ html {
     padding-bottom: 8rem;
     @include tablet {
       flex-direction: column;
-      padding: 0 7px 10rem 7px;
+      padding: 0 7px 13rem 7px;
     }
     .col-info {
       width: 50%;
@@ -906,7 +916,7 @@ html {
         @include tablet {
           position: relative;
           left: 20px;
-          top: 120px;
+          top: 170px;
         }
       }
     }
