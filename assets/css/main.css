@@ -68,7 +68,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 400px) {
   .hero .content-hero .col-info h1 {
     font-size: 1.8rem;
   }
@@ -105,6 +105,7 @@ html {
   .hero .content-hero .col-info img {
     margin-left: 0;
     width: 80%;
+    margin-right: 1rem;
   }
 }
 
@@ -168,9 +169,15 @@ html {
   }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 428px) {
   .hero .content-hero .col-info a {
-    width: 90%;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .hero .content-hero .col-info a {
+    width: 100%;
   }
 }
 
@@ -274,7 +281,7 @@ html {
 .benefits .item {
   height: 365px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 @media only screen and (max-width: 900px) {
@@ -432,14 +439,14 @@ html {
 .benefits .box-s::after {
   content: "";
   display: block;
-  width: 520px;
+  width: 506px;
   height: 168px;
   background-image: url("../icons/sombra-botao-02.png");
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
   top: 10px;
-  left: 1px;
+  left: 5px;
   z-index: 1;
   opacity: 0.5;
 }
@@ -521,6 +528,13 @@ html {
   position: relative;
 }
 
+@media only screen and (max-width: 900px) {
+  .games .box-s {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
 .games .box-s::after {
   content: "";
   display: block;
@@ -565,9 +579,23 @@ html {
   line-height: 17px;
 }
 
+@media only screen and (max-width: 900px) {
+  .games .btn-games a {
+    left: 0;
+    top: -19px;
+    width: 100%;
+  }
+}
+
 .games .btn-games a:hover {
   width: 340px;
   border-radius: 15px;
+}
+
+@media only screen and (max-width: 900px) {
+  .games .btn-games a:hover {
+    width: 100%;
+  }
 }
 
 .games .btn-games a span {
@@ -605,6 +633,7 @@ html {
   .competicoes .content-competicoes {
     flex-direction: column;
     padding: 1.5rem 0 1.5rem 0.5rem;
+    overflow: hidden;
   }
 }
 
@@ -783,10 +812,24 @@ html {
   }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 428px) {
+  .competicoes .content-competicoes .col-info .btn-affiliate .box-s::after {
+    height: 109px;
+    width: 259px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
   .competicoes .content-competicoes .col-info .btn-affiliate .box-s::after {
     width: 232px;
     height: 55px;
+  }
+}
+
+@media only screen and (max-width: 345px) {
+  .competicoes .content-competicoes .col-info .btn-affiliate .box-s::after {
+    width: 202px;
+    height: 66px;
   }
 }
 
@@ -817,7 +860,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 400px) {
   .competicoes .content-competicoes .col-info .btn-affiliate a {
     font-size: 0.55rem;
     padding: 0.5rem 0.2rem;
@@ -967,9 +1010,16 @@ html {
   }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 400px) {
   .eventos .content-event .col-info .btn-affiliate .box-s::after {
     width: 380px;
+    height: 47px;
+  }
+}
+
+@media only screen and (max-width: 345px) {
+  .eventos .content-event .col-info .btn-affiliate .box-s::after {
+    width: 350px;
     height: 47px;
   }
 }
@@ -1259,13 +1309,19 @@ html {
 }
 
 @media only screen and (max-width: 900px) {
+  .social .content-social .col-info .btn-affiliate a:hover {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
   .social .content-social .col-info .btn-affiliate a {
     width: 100%;
     font-size: 0.95rem;
   }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 400px) {
   .social .content-social .col-info .btn-affiliate a {
     font-size: 0.55rem;
   }
@@ -1298,6 +1354,13 @@ html {
   .social .content-social-mobile {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 345px) {
+  .social .content-social-mobile {
+    padding: 0.7rem;
   }
 }
 
@@ -1314,6 +1377,12 @@ html {
   .social .content-social-mobile h3 {
     font-size: 1.25rem;
     margin-bottom: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 345px) {
+  .social .content-social-mobile h3 {
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -1348,6 +1417,12 @@ html {
   }
 }
 
+@media only screen and (max-width: 345px) {
+  .social .content-social-mobile .col-img img {
+    height: 210px;
+  }
+}
+
 .social .content-social-mobile .col-info {
   width: 60%;
   padding: 2rem 4rem;
@@ -1356,6 +1431,12 @@ html {
 @media only screen and (max-width: 900px) {
   .social .content-social-mobile .col-info {
     padding: 1rem 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 345px) {
+  .social .content-social-mobile .col-info {
+    padding: 0 0.5rem;
   }
 }
 
@@ -1388,6 +1469,12 @@ html {
   .social .content-social-mobile .col-info .btn-affiliate {
     margin-top: 1.3rem;
     margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 345px) {
+  .social .content-social-mobile .col-info .btn-affiliate {
+    margin-top: 0.5rem;
   }
 }
 
@@ -1427,10 +1514,22 @@ html {
   }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 428px) {
+  .social .content-social-mobile .col-info .btn-affiliate .box-s::after {
+    height: 84px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
   .social .content-social-mobile .col-info .btn-affiliate .box-s::after {
     width: 260px;
     height: 37px;
+  }
+}
+
+@media only screen and (max-width: 345px) {
+  .social .content-social-mobile .col-info .btn-affiliate .box-s::after {
+    width: 230px;
   }
 }
 
@@ -1466,9 +1565,15 @@ html {
   }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 428px) {
   .social .content-social-mobile .col-info .btn-affiliate a {
     font-size: 0.55rem;
+  }
+}
+
+@media only screen and (max-width: 345px) {
+  .social .content-social-mobile .col-info .btn-affiliate a {
+    font-size: 0.45rem;
   }
 }
 
@@ -1612,8 +1717,8 @@ html {
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
-  top: 9px;
-  left: 0px;
+  top: 7px;
+  left: 6px;
   z-index: 1;
 }
 
@@ -1626,10 +1731,17 @@ html {
   }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 400px) {
   .tv .content-tv .col-info .btn-affiliate .box-s::after {
     width: 370px;
     height: 74px;
+  }
+}
+
+@media only screen and (max-width: 345px) {
+  .tv .content-tv .col-info .btn-affiliate .box-s::after {
+    width: 340px;
+    height: 70px;
   }
 }
 
@@ -1650,6 +1762,12 @@ html {
   z-index: 2;
   position: relative;
   transition: all ease-in-out 0.5s;
+}
+
+@media only screen and (max-width: 345px) {
+  .tv .content-tv .col-info .btn-affiliate a {
+    font-size: 0.85rem;
+  }
 }
 
 .tv .content-tv .col-info .btn-affiliate a:hover {
@@ -1789,6 +1907,15 @@ html {
   }
 }
 
+@media only screen and (max-width: 345px) {
+  .afiliados .content-afiliados .col-info a {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    line-height: 18px;
+  }
+}
+
 .afiliados .content-afiliados .col-info a strong {
   font-family: principal-bold;
 }
@@ -1823,6 +1950,11 @@ header {
   width: 80px;
 }
 
+.content-header .desktop-nav {
+  display: flex;
+  align-items: center;
+}
+
 @media only screen and (max-width: 900px) {
   .content-header .desktop-nav {
     display: none;
@@ -1837,16 +1969,33 @@ header {
 
 .content-header .desktop-nav ul li {
   margin: 0 1rem;
+  height: 32px;
+  display: flex;
+  align-items: center;
 }
 
 .content-header .desktop-nav ul li a {
-  color: #38e67d;
+  color: #fff;
   font-family: principal-regular;
   font-weight: 300;
   text-decoration: none;
   font-size: 0.8rem;
   letter-spacing: 2px;
-  line-height: 15px;
+  transition: all ease-in-out 0.5s;
+  text-shadow: 2px 2px 7px #023596;
+}
+
+.content-header .desktop-nav ul li a::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background-color: #38e67d;
+  transition: all ease-in-out 0.5s;
+}
+
+.content-header .desktop-nav ul li a:hover::after {
+  width: 100%;
 }
 
 .content-header .desktop-nav ul li:nth-child(odd) a {
@@ -1856,12 +2005,12 @@ header {
 .content-header .desktop-nav ul li:nth-child(4) {
   max-width: 90px;
   text-align: center;
-  line-height: 10px;
+  line-height: 15px;
 }
 
 .content-header .desktop-nav ul li:nth-child(7) {
   text-align: center;
-  line-height: 10px;
+  line-height: 15px;
 }
 
 .menu-icon {
@@ -1964,7 +2113,7 @@ header {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 428px) {
   .overlay .overlay-content {
     top: 25%;
   }

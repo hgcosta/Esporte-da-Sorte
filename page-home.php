@@ -16,10 +16,13 @@
                 <div id="myNav" class="overlay">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <div class="overlay-content">
-                        <a onclick="closeNav()" href="#home">Home</a>
-                        <a onclick="closeNav()" href="#games">Games</a>
+                        <a onclick="closeNav()" href="#times">Times</a>
+                        <a onclick="closeNav()" href="#competicoes">Competições</a>
+                        <a onclick="closeNav()" href="#eventos">Eventos</a>
+                        <a onclick="closeNav()" href="#redes-sociais">Redes Sociais</a>
+                        <a onclick="closeNav()" href="#tv">Televisão</a>
                         <a onclick="closeNav()" href="#beneficios">Benefícios</a>
-                        <a onclick="closeNav()" href="#afiliados">Quero ser afiliado</a>
+                        <a onclick="closeNav()" href="#seja-afiliados">Seja um</br>Afiliado</a>
 
                     </div>
                 </div>
@@ -87,7 +90,12 @@
     <section class="games">
         <h2>Mais de 3 Mil games</h2>
         <div class="container">
-            <a href="https://www.esportesdasorte.com/ptb/bet/ultraplay-esports" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/games.png" alt="Games"></a>
+            <a href="https://www.esportesdasorte.com/ptb/games/casino" target="_blank">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/games-mobile.png">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/games.png" alt="Games">
+                </picture>  
+            </a>
             <div class="btn-games box-s">
                 <a href="<?php bloginfo('url') ?>/afiliados/"><span>Quero</span> ser <strong>Afiliado</strong></a>
             </div>
